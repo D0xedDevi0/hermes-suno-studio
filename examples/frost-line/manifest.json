@@ -1,0 +1,33 @@
+{
+ "title": "FROST LINE",
+ "slug": "frost-line",
+ "created": "2026-11-24T20:05:08Z",
+ "model": "v6",
+ "requested_duration": 180,
+ "style": "Boom bap revival, modern crate-rooted and confident, hard dusty sampled drums with a punchy kick and snap snare under swung hats, warm prominent played or filtered sampled bass, chopped soul and jazz loops with warm keys and tasteful horn stabs, vinyl dust and crackle retained, confident mid-register multi-syllabic delivery with DJ scratch hooks and bar-end doubles, warm punchy mix. A dusty loop with crackle opens. Hard drums snap in. Verses ride confident. A DJ scratch answers the hook. The loop strips to sampled source for the last four bars. 85-95 BPM, E minor. one narrator, low and unhurried, close to the mic, more tired than angry",
+ "exclude": "trap hats, autotune, sub-bass drops, EDM synths, no sampling",
+ "lyrics": "[Intro]\nForty degrees at the mailbox is the first honest number of the season\nEverything I left unfixed in October bills me in January\n\n[Verse 1]\nCold came through the truck door, said it plain, no rehearsal\nFrost on the windshield spelling out my whole dispersal\nPiled up the summer like the summer owed me something back\nDropped a hundred names into a bucket that I never packed\nMailbox full of paper and none of it was mine to open\nEvery favor that I called in came back smaller than I had spoken\nOld dog on the porch like the weather is a rumor\nMy father in my head: winter sorts the men from the fewer\n\n[Hook] [Dusty Drums] [Scratch Hook]\nFrost line running through the whole of me\n(through the whole of me)\nLine it up and see what's left standing when it's cold\n(frost line running through)\n\n[Verse 2]\nRound here the first freeze is honest as a poor man's ledger\nPick a vice or pick a habit, either way you lose the weather\nHeater with an attitude and half a cord of wood\nA friend I do not call because he'd ask me if I'm good\nSnow tires in the barn and a woman on the fence\nBoth of them will tell me what they think of me in tense\nKeep a page of names I swore I'd never let go under\nEvery winter takes a few and never leaves a number\n\n[Hook] [Dusty Drums] [Scratch Hook]\nFrost line running through the whole of me\n(through the whole of me)\nLine it up and see what's left standing when it's cold\n(frost line running through)\n\n[Bridge]\nNothing frozen ever dies, it just waits around for thaw\nAnd everything I buried here is standing where I saw\n\n[Verse 3]\nWinter does not hate you, it just asks you what you're holding\nApril does not know you, it just finds out where you're going\nI have been warm on less than this and colder in a crowd\nSo I'll take the wood I split myself and let it burn loud\n\n[Hook] [Dusty Drums] [Scratch Hook]\nFrost line running through the whole of me\n(through the whole of me)\nLine it up and see what's left standing when it's cold\n(frost line running through)",
+ "clip_ids": [
+  "81a66aa5-d39f-4df9-b7fb-22f3ba12bd8b"
+ ],
+ "take_id": "81a66aa5-d39f-4df9-b7fb-22f3ba12bd8b",
+ "final_clip_id": "81a66aa5-d39f-4df9-b7fb-22f3ba12bd8b",
+ "take_seconds": 178.88,
+ "final_seconds": 178.88,
+ "extended": false,
+ "suno_url": "https://suno.com/song/81a66aa5-d39f-4df9-b7fb-22f3ba12bd8b",
+ "files": {
+  "mp3": "./frost-line.mp3",
+  "take_mp3": "./frost-line-take.mp3"
+ },
+ "credits": {
+  "before": [
+   1300,
+   0
+  ],
+  "after": [
+   1300,
+   0
+  ]
+ }
+}

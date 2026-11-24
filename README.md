@@ -52,3 +52,24 @@ prints the authorize URL and accepts the pasted redirect URL.
   per clip — always send an explicit clip count (this client defaults to 1).
 - The loopback redirect (`http://127.0.0.1:27891/callback`) intentionally has no
   listener: you copy the code out of the address bar after approving.
+
+## Whole-track builder (`suno_track.py`)
+Turns a Rhythm Reaper frame into a finished track: create -> wait -> length ->
+`audio-extensions-create` -> `audio-full-song` (join) -> export -> lyric alignment -> `manifest.json`.
+```
+suno_track.py --title T --style style.txt --lyrics bars.txt [--exclude E] \
+  [--model v6] [--duration 180] [--out DIR] [--no-extend] [--wav] [--from-clip ID]
+```
+`--from-clip` resumes an interrupted run without regenerating. Works whether or not
+the export step is available (length falls back to `audio-analysis`).
+
+See `examples/frost-line/` for a complete, verified run (frame in, manifest out)
+and `skills/suno-mcp/SKILL.md` for the measured economics and gotchas.
+
+## Measured (live server)
+| action | cost |
+| --- | --- |
+| `audio-create` | 2 songs per call, both charged (~5 credits/song) |
+| `audio-extensions-create` | 2 takes, both charged |
+| `audio-full-song` (join) | **0 credits**, returns a new clip id |
+| `audio-download` | 1 monthly download credit (separate meter), rate-limited |
