@@ -1,0 +1,17 @@
+{
+  "client_id": "dcr-otQad7KURyUVkQSdUySGhg",
+  "client_id_issued_at": 1795546555,
+  "client_name": "",
+  "redirect_uris": [
+    "http://127.0.0.1:27891/callback"
+  ],
+  "grant_types": [
+    "authorization_code",
+    "refresh_token"
+  ],
+  "response_types": [
+    "code"
+  ],
+  "token_endpoint_auth_method": "none",
+  "scope": "api:v0 credits:spend download library:read library:search library:write offline_access profile:read"
+}
