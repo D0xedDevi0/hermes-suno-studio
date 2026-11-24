@@ -44,6 +44,20 @@ suno_track.py --title T --style style.txt --lyrics bars.txt [--exclude E] \
 ```
 `--from-clip` resumes an interrupted run (or any existing take) without regenerating.
 
+## Free drafts before paid finals (local CPU lane)
+`/opt/data/local-lane` renders text-to-music drafts with MusicGen on CPU - no API, no
+credits, offline after the first model download (~1.5 GB).
+```
+local-lane/venv/bin/python local-lane/frame_draft.py --frame DIR --seconds 20
+```
+It reads `DIR/style.txt`, compacts it for MusicGen, and drops `draft_<epoch>.wav` + a
+manifest next to the Suno manifest, so one frame folder holds the free sketch and the
+paid master. Measured on 16 CPU cores: **~1.7 s of compute per second of audio**
+(12 s draft in 25 s wall, RTF 0.58). Output is mono 32 kHz - sketches only.
+Flow: draft free locally, choose the arrangement that works, then spend Suno credits
+on the final. MusicGen has no negative prompt, so a frame's `exclude.txt` applies to
+the Suno render only.
+
 ## Verified economics and behaviour (measured against the live server)
 - `audio-create` returns **2 songs per call and charges both** — measured at **5 credits/song**.
 - `audio-extensions-create` also returns 2 takes and charges both.

@@ -73,3 +73,10 @@ and `skills/suno-mcp/SKILL.md` for the measured economics and gotchas.
 | `audio-extensions-create` | 2 takes, both charged |
 | `audio-full-song` (join) | **0 credits**, returns a new clip id |
 | `audio-download` | 1 monthly download credit (separate meter), rate-limited |
+
+## Free local draft tier (`local-lane/`)
+`local-lane/` renders text-to-music sketches on CPU with MusicGen — no API, no credits,
+offline after the first model download. `frame_draft.py --frame DIR` turns any Rhythm
+Reaper frame directory into a free draft next to the paid Suno manifest. Measured on 16
+CPU cores: ~1.7 s of compute per second of audio, mono 32 kHz. Draft free, then spend
+credits on the final.
